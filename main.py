@@ -23,7 +23,7 @@ def parse():
     for item in items:
         comps.append({
             'text': item.find('div', class_ = 'titles').get_text(strip = True),
-            'theme': item.find('div', class_ = 'info g-date item__info').get_text(strip = True),
+            'theme': item.find('div', class_ = 'info g-date item__info').get_text(strip = True)
         })
 
         for comp in comps:
